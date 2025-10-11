@@ -35,12 +35,13 @@ pip install inference-sdk supervision opencv-python easyocr numpy
 
 Exemplo usando variável de ambiente no PowerShell:
 
+
 ```powershell
-$Env:ROBOFLOW_API_KEY="sua-chave-aqui"
+$Env:ROBOFLOW_API_KEY="wsNv1Yo4iSAU0CuXa0mI"
 python ocr.py
 ```
 
-E atualize `ocr.py` para ler `os.environ["ROBOFLOW_API_KEY"]`.
+Não tem problema deixar essa chave de api assim pois ela é do próprio código disponibilizado no projeto roboflow (https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/model/11)
 
 ## Execução
 
@@ -55,3 +56,8 @@ Ao finalizar, o script exibirá a imagem anotada e registrará os textos lidos d
 - `img_placas/placa_<n>.jpg`: recorte cru de cada placa detectada.
 - `img_placas/ocr_<arquivo>.jpg`: recorte com o texto reconhecido desenhado sobre a imagem.
 - Mensagens no terminal com o texto detectado para cada recorte.
+
+
+Adaptado de:
+Plate Extractor: https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/model/11
+Easy OCR: https://github.com/JaidedAI/EasyOCR
