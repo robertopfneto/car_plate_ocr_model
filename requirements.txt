@@ -1,2 +1,7 @@
-python3 -m pip install --upgrade pip
-python3 -m pip install fastapi uvicorn[standard] inference-sdk supervision "opencv-python-headless<5" easyocr numpy
+fastapi
+uvicorn[standard]
+inference-sdk
+supervision
+opencv-python-headless<5
+easyocr
+numpy
