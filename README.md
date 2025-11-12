@@ -45,6 +45,8 @@ uvicorn ocr:app --host 0.0.0.0 --port 8000
 python ocr.py
 ```
 
+> Deploy em plataformas como Render: use `runtime.txt` (ja incluso) para forcar Python 3.11, necessario porque `inference-sdk` ainda nao oferece pacotes para Python 3.13+.
+
 ## Uso
 
 1. Faca uma requisicao HTTP para `http://localhost:8000/plates` (GET ou POST). Exemplos:
